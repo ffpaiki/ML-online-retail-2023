@@ -23,3 +23,13 @@ The purpose of this is to remove unnecessary data, such as data with null values
 ### Exploratory Data Analysis (EDA)
 
 In this phase, I'm trying to understand any kinds of information that can be generated from this data, such that has meaningful impact for the business. Since this is a transaction record of a business, the most important part in a business is sales, it's about how much profit can be generated and how can we use this information to increase sales in the future. Therefore, I use this to get as much information as possible regarding the sales information, such as countries that has more sales, time of day that has more sales, type of customer to target, which product that has the greater sales at a certain time, etc.
+
+### K-Means Clustering
+
+### Principal Component Analysis
+
+### Logistic Regression
+
+### Linear Regression
+
+### Market-Basket Analysis
