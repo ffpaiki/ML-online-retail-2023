@@ -30,7 +30,12 @@ Due to the uneven distribution of the country data, which includes around 39 cit
 
 ### K-Means Clustering
 
+In this part, we offer a clustering using K-means model. It is an unsupervised learning algorithm that aims to partition a dataset into K clusters. However, before proceeding, we need to implement elbow method to determine the optimal number of clusters. The basic idea of this method is to run K-means algorithms for a range value of K, in here we run it 12 times. 
+
+From this line graph, we can see that the higher the number of clusters, the lower inertia is. Inertia itself is the sum of squared distances between data points and their assigned clusters centroid. So, based on the line graph, we can see the “elbow”, where it points to a suitable cluster, which is between 6 or 7. 
+
 As we attempt to find the number of suitable clusters among customers based on purchase frequency and total spending, we run the K-means method and identify 7 clusters over more than 4300 customers. The visualization of the results is presented above. It’s important to note that during the execution of the K-means algorithm, we standardize the data point to prevent model bias. 
+
 To represent the result of customer clustering using K-means, we utilize a scatter plot. In here, the x red dot displays a centroid for each cluster. Notably, when observing the two data points positioned above the plot, our intuition suggests that these points may be outliers. We make this assessment based on our gut feeling, as these points lack sufficient data support for their assigned cluster. 
 
 ### Logistic Regression
