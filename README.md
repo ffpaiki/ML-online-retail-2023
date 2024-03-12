@@ -18,11 +18,17 @@ The data set contains all the transaction information for a UK-based non-store o
 
 ### Data Cleaning & Transformation
 
-The purpose of this is to remove unnecessary data, such as data with null values or data that doesn't conform to certaion format/requirement. During the data transformation, I also generate several data and split data into parts, which could be use later in categorize the information from the data.
+The purpose of this is to remove unnecessary data, such as data with null values or data that doesn't conform to certaion format/requirement. During the data transformation, I also generate several data and split data into parts, which could be use later in categorize the information from the data. Data pre-processing is an essential step in the data analysis pipeline. It entails cleaning and transforming raw data into a format suitable for analysis.
+
+This is an example of the data we possess; the total amount of data we have before the preprocessing step is approximately 550 thousand records, encompassing various features, as can be seen here. As you can see here, this dataset has more than 3500 types of items and more than 4000 customers. The data pre-processing, we perform includes removing canceled invoices, eliminating rows lacking CustomerID or item names, and standardizing the time format appropriately. In the end, the number of data rows after this pre-processing step is approximately 390 thousand.
 
 ### Exploratory Data Analysis (EDA)
 
 In this phase, I'm trying to understand any kinds of information that can be generated from this data, such that has meaningful impact for the business. Since this is a transaction record of a business, the most important part in a business is sales, it's about how much profit can be generated and how can we use this information to increase sales in the future. Therefore, I use this to get as much information as possible regarding the sales information, such as countries that has more sales, time of day that has more sales, type of customer to target, which product that has the greater sales at a certain time, etc.
+
+Due to the uneven distribution of the country data, which includes around 39 cities, we attempted to group them based on areas. Eventually, we discovered that more than 90% of our customers are in the UK, with the remainder distributed across Europe and several other regions. From this simple descriptive statistic, businesses can infer that they could enhance their marketing efforts in the UK. This is also one of the benefits of implementing Exploratory Data Analysis (EDA) before data processing.![image](https://github.com/ffpaiki/ML-online-retail-2023/assets/74241058/8be20430-9241-4435-9a63-e23a1fd5363f). We examined the monthly total sales from our retail data. The sales display fluctuations throughout the year. In the first three months, the sales were relatively low, hovering around 600k. And in the fourth month, there was a slight increase in sales, reaching just above 600k. But, in the fifth and sixth months, the sales dip back down to 500k. Then, from the seventh month until the last month of the year, the sales slightly increase until reaching about 1 million at the of the year. Moreover, the average sales for the year were about 700k, and this figure was achieved starting from the middle of August until December. ![image](https://github.com/ffpaiki/ML-online-retail-2023/assets/74241058/b6aaad33-c3f3-47f8-aee1-c2d8324f3aec)
+
+
 
 ### K-Means Clustering
 
